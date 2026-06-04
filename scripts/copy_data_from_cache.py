@@ -55,7 +55,10 @@ def main() -> None:
     sasrec_dir = Path(__file__).resolve().parents[1]
     repo_root = sasrec_dir.parent
 
+    # Default: sibling SASRec_cache (monorepo layout) or explicit --source
     source = args.source or (repo_root / "SASRec_cache")
+    if not source.is_dir() and (sasrec_dir.parent.parent / "SASRec_cache").is_dir():
+        source = sasrec_dir.parent.parent / "SASRec_cache"
     target = args.target or (sasrec_dir / "data")
 
     print(f"source: {source}")

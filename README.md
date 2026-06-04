@@ -30,12 +30,18 @@ SASRec/
 └── requirements.txt
 ```
 
+## 克隆本仓库
+
+```bash
+git clone https://github.com/kamineayaka/UserBehavior-SASRec.git
+cd UserBehavior-SASRec
+```
+
 ## 5 分钟快速开始
 
 ```bash
-cd SASRec
 pip install -r requirements.txt
-python scripts/copy_data_from_cache.py   # 若 data/ 尚无 parquet
+python scripts/copy_data_from_cache.py   # 若 data/ 尚无 parquet（需上级目录有 SASRec_cache，或手动复制 parquet）
 ```
 
 在 Jupyter 中打开 `notebooks/01_full_train.ipynb`，从上到下运行。
