@@ -1,0 +1,37 @@
+{
+  "baseline_name": "baseline_sasrec_20260425_130830_hr10_0.8475_ndcg10_0.7736.pt",
+  "created_at": "20260425_130830",
+  "source_model": "sasrec_full_memmap.pt",
+  "data_root": "E:/oytproject/UserBehavior_Analysis/SASRec_cache",
+  "metrics": {
+    "valid": {
+      "HR@10": 0.847595592553635,
+      "NDCG@10": 0.7747171183425773,
+      "users": 985877
+    },
+    "test": {
+      "HR@10": 0.847495174347307,
+      "NDCG@10": 0.773612888986884,
+      "users": 985877
+    }
+  },
+  "data_files": {
+    "train": {
+      "path": "train.parquet",
+      "size_bytes": 394728909
+    },
+    "valid": {
+      "path": "valid.parquet",
+      "size_bytes": 9243314
+    },
+    "test": {
+      "path": "test.parquet",
+      "size_bytes": 9231092
+    },
+    "item2idx_mapping": {
+      "path": "item2idx_mapping.parquet",
+      "size_bytes": 15508023
+    }
+  },
+  "notes": "Frozen baseline from full-data retrain run."
+}

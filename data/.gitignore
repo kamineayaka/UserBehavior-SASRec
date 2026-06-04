@@ -1,0 +1,4 @@
+*.parquet
+memmap_cache/
+*.pt
+!.gitkeep

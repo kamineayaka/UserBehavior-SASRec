@@ -1,0 +1,10 @@
+# Generated artifacts
+data/*.parquet
+data/memmap_cache/
+data/**/*.pt
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
