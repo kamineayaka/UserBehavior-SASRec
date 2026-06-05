@@ -33,5 +33,5 @@
       "size_bytes": 15508023
     }
   },
-  "notes": "Frozen baseline from full-data retrain run."
+  "notes": "Frozen baseline from full-data retrain run. Full eval on 985877 users. Grid-search FAST mode uses eval_user_limit=100000; metrics are not directly comparable to this file."
 }

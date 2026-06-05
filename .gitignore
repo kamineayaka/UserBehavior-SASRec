@@ -2,8 +2,17 @@
 data/*.parquet
 data/memmap_cache/
 data/**/*.pt
+
+# Results: allow team grid-search csv/jsonl under results/grid_search/
 results/*
-!results/.gitkeep
+!results/grid_search/
+results/grid_search/*
+!results/grid_search/README.md
+!results/grid_search/history/
+!results/grid_search/history/**
+!results/grid_search/**/*.csv
+!results/grid_search/**/*.jsonl
+results/grid_search/_merged*.csv
 
 # Python
 __pycache__/
