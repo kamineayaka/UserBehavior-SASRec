@@ -6,6 +6,7 @@
 
 | 文档 | 内容 |
 |------|------|
+| [数据与模型下载.md](数据与模型下载.md) | 从 GitHub Release 下载 parquet / baseline 权重 |
 | [前置知识与SASRec.md](前置知识与SASRec.md) | 必备基础知识 + SASRec 原理简介 |
 | [使用指南.md](使用指南.md) | 环境、数据、训练、排障（按步骤操作） |
 | [团队网格搜索任务.md](团队网格搜索任务.md) | 团队 FAST 网格任务认领与 `grid_space` |
@@ -24,7 +25,7 @@ SASRec/
 │   └── 03_goal_check.ipynb
 ├── results/              # 网格搜索输出
 ├── scripts/
-│   ├── copy_data_from_cache.py
+│   ├── download_release_assets.py
 │   ├── merge_grid_results.py
 │   ├── sync_sasrec_core.py
 │   └── build_notebooks.py
@@ -44,7 +45,7 @@ cd UserBehavior-SASRec
 
 ```bash
 pip install -r requirements.txt
-python scripts/copy_data_from_cache.py   # 若 data/ 尚无 parquet（需上级目录有 SASRec_cache，或手动复制 parquet）
+python scripts/download_release_assets.py   # 或见 数据与模型下载.md 手动下载
 ```
 
 在 Jupyter 中打开 `notebooks/01_full_train.ipynb`，从上到下运行。

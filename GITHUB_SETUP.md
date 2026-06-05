@@ -27,7 +27,7 @@ cd UserBehavior-SASRec
 pip install -r requirements.txt
 ```
 
-训练数据 `data/*.parquet` 不在 Git 中，需维护者单独提供或运行 `python scripts/copy_data_from_cache.py`（monorepo 环境下）。
+训练数据 `data/*.parquet` 不在 Git 中，请从 [GitHub Releases](https://github.com/kamineayaka/UserBehavior-SASRec/releases) 下载，或运行 `python scripts/download_release_assets.py`（见 [数据与模型下载.md](数据与模型下载.md)）。
 
 ## 与 monorepo 的关系
 

@@ -1,6 +1,6 @@
 # SASRec 训练数据目录
 
-本目录存放团队复现所需的 **切分后 parquet**（默认从仓库根目录 `SASRec_cache/` 复制，不入 Git）。
+本目录存放团队复现所需的 **切分后 parquet**（从 [GitHub Release](../数据与模型下载.md) 下载，不入 Git）。
 
 ## 必需文件
 
@@ -23,13 +23,13 @@
 
 ## 准备数据
 
-在 `SASRec/` 目录下执行：
+见 [数据与模型下载.md](../数据与模型下载.md)。简要步骤：
 
 ```bash
-python scripts/copy_data_from_cache.py
+python scripts/download_release_assets.py
 ```
 
-或手动将上述 4 个 parquet 从 `../SASRec_cache/` 复制到本目录。
+或从 [Latest Release](https://github.com/kamineayaka/UserBehavior-SASRec/releases) 手动下载 4 个 parquet 到本目录。
 
 ## 校验
 

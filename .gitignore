@@ -14,6 +14,9 @@ results/grid_search/*
 !results/grid_search/**/*.jsonl
 results/grid_search/_merged*.csv
 
+# Release download staging
+.release_download/
+
 # Python
 __pycache__/
 .ipynb_checkpoints/
