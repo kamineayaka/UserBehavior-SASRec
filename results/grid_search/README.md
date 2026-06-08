@@ -15,8 +15,10 @@ grid_search_fast_{姓名}_{任务ID}_{YYYYMMDD_HHMMSS}.jsonl
 
 ## 提交方式
 
-1. **Git PR（推荐）**：fork 仓库 → 将文件放入 `results/grid_search/` → 向 `main` 提 PR。
-2. **共享盘/群内**：按相同命名打包，由维护者放入本目录并 commit。
+详细步骤（含 Contributors 署名）：[成员提交与贡献者署名说明.md](../../成员提交与贡献者署名说明.md)
+
+1. **Git PR（推荐）**：Fork 仓库 → 将文件放入 `results/grid_search/` → 向 `main` 提 PR；维护者用 **Create a merge commit** 合并。
+2. **共享盘/群内**：按相同命名打包，由维护者放入本目录并 commit（建议 commit message 加 `Co-authored-by`）。
 
 ## 目录说明
 

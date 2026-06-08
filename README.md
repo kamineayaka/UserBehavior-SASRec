@@ -10,7 +10,8 @@
 | [前置知识与SASRec.md](前置知识与SASRec.md) | 必备基础知识 + SASRec 原理简介 |
 | [使用指南.md](使用指南.md) | 环境、数据、训练、排障（按步骤操作） |
 | [团队网格搜索任务.md](团队网格搜索任务.md) | 团队 FAST 网格任务认领与 `grid_space` |
-| [results/grid_search/README.md](results/grid_search/README.md) | 网格结果提交命名与 PR 说明 |
+| [成员提交与贡献者署名说明.md](成员提交与贡献者署名说明.md) | Fork/PR 提交步骤与 Contributors 署名 |
+| [results/grid_search/README.md](results/grid_search/README.md) | 网格结果文件命名规范 |
 | [data/README.md](data/README.md) | 数据文件清单与字段说明 |
 
 ## 目录结构
