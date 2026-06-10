@@ -1,0 +1,2 @@
+exp_id,mode,fit_sec,eval_sec,last_loss,valid_hr10,valid_ndcg10,test_hr10,test_ndcg10,users_eval,num_epochs,eval_user_limit,maxlen,hidden_units,num_blocks,num_heads,dropout_rate,lr,batch_size,eval_num_neg
+1,fast,3215.809770345688,492.82036685943604,0.8941016846789996,0.87594,0.7936052750174554,0.8781,0.7941235307441689,100000.0,3,100000,100,128,3,4,0.2,0.001,512,100
