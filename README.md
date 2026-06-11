@@ -23,7 +23,8 @@ SASRec/
 ├── notebooks/
 │   ├── 01_full_train.ipynb
 │   ├── 02_grid_search.ipynb
-│   └── 03_goal_check.ipynb
+│   ├── 03_goal_check.ipynb
+│   └── 04_full_train_B7.ipynb
 ├── results/              # 网格搜索输出
 ├── scripts/
 │   ├── download_release_assets.py
