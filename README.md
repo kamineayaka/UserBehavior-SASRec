@@ -9,6 +9,7 @@
 | [数据与模型下载.md](数据与模型下载.md) | 从 GitHub Release 下载 parquet / baseline 权重 |
 | [前置知识与SASRec.md](前置知识与SASRec.md) | 必备基础知识 + SASRec 原理简介 |
 | [使用指南.md](使用指南.md) | 环境、数据、训练、排障（按步骤操作） |
+| [resources/项目文档_UserBehavior-SASRec.docx](resources/项目文档_UserBehavior-SASRec.docx) | 详细项目文档（背景、前置知识、实现与流程） |
 | [团队网格搜索任务.md](团队网格搜索任务.md) | 团队 FAST 网格任务认领与 `grid_space` |
 | [成员提交与贡献者署名说明.md](成员提交与贡献者署名说明.md) | Fork/PR 提交步骤与 Contributors 署名 |
 | [results/grid_search/README.md](results/grid_search/README.md) | 网格结果文件命名规范 |
