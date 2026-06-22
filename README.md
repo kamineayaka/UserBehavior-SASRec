@@ -12,7 +12,6 @@ SASRec 序列推荐算法的团队复现包：数据在 `data/`，算法在 [`sa
 | [sasrec_core/README.md](sasrec_core/README.md) | 算法包 API 参考 |
 | [sasrec_core/SASREC_原理与实现.md](sasrec_core/SASREC_原理与实现.md) | 原理与代码对照（深入阅读） |
 | [data/README.md](data/README.md) | 数据文件字段说明 |
-| [resources/项目文档_UserBehavior-SASRec.docx](resources/项目文档_UserBehavior-SASRec.docx) | 补充：课程汇报用 Word 文档（可能滞后于 `docs/`） |
 
 ## 目录结构
 
