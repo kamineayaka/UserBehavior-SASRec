@@ -14,7 +14,6 @@ FILES = (
     "trainer.py",
     "estimator.py",
     "README.md",
-    "TEAM_GUIDE.md",
     "SASREC_原理与实现.md",
 )
 

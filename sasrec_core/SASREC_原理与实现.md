@@ -45,8 +45,7 @@ sasrec_core/
 ├── data.py         # 数据集、parquet/memmap、padding、负采样
 ├── trainer.py      # 训练一步、采样评估 HR/NDCG、全量打分推荐
 ├── estimator.py    # SASRecEstimator：fit/evaluate/recommend/save/load
-├── README.md       # 使用说明
-└── TEAM_GUIDE.md   # 团队指南
+└── README.md       # API 参考
 ```
 
 **调用关系简述**：
@@ -221,4 +220,4 @@ sasrec_core/
 ## 附录：延伸阅读
 
 - 原始论文：**Kang & McAuley, “Self-Attentive Sequential Recommendation” (IEEE ICDM)**。可在公开渠道检索题名与 bibtex。
-- 本仓库快速上手：**[README.md](README.md)**。
+- API 参考：**[README.md](README.md)**；项目使用流程：**[docs/使用指南.md](../docs/使用指南.md)**。

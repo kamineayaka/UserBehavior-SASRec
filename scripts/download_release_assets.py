@@ -109,7 +109,7 @@ def verify(data_dir: Path) -> list[str]:
 
 def print_manual_help() -> None:
     print(f"\nManual download: {RELEASE_URL}")
-    print("See 数据与模型下载.md for file list and paths.")
+    print("See docs/使用指南.md for file list and paths.")
 
 
 def main() -> int:

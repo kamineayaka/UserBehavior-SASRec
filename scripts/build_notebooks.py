@@ -70,7 +70,7 @@ def build_01(repo: Path, out: Path) -> None:
     nb = load_nb(repo, "SASRec_full_data_run.ipynb")
     nb["cells"][0]["source"] = to_source_lines(
         "# SASRec 全量训练（团队复现包）\n\n"
-        "数据目录：`SASRec/data/`。请先从 GitHub Release 准备数据，见 `数据与模型下载.md` 或 `python scripts/download_release_assets.py`。\n"
+        "数据目录：`data/`。请先从 GitHub Release 准备数据，见 `docs/使用指南.md` 或 `python scripts/download_release_assets.py`。\n"
     )
     c2 = "".join(nb["cells"][2]["source"])
     c2 = strip_lines(
@@ -89,7 +89,7 @@ def build_02(repo: Path, out: Path) -> None:
     nb = load_nb(repo, "SASRec_grid_search.ipynb")
     nb["cells"][0]["source"] = to_source_lines(
         "# SASRec 网格搜索（团队复现包）\n\n"
-        "数据：`SASRec/data/`；结果：`SASRec/results/grid_search/`。\n"
+        "数据：`data/`；结果：`results/grid_search/`。任务说明见 `docs/团队协作.md`。\n"
     )
     c1 = "".join(nb["cells"][1]["source"])
     c1 = strip_lines(

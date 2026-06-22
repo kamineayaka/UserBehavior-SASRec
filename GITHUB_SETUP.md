@@ -12,10 +12,9 @@
 
 ## 2. 推送本地代码
 
-在 `SASRec/` 目录执行（remote 已配置为 `kamineayaka/UserBehavior-SASRec`，若用户名或仓库名不同请先 `git remote set-url`）：
+在仓库根目录执行（remote 已配置为 `kamineayaka/UserBehavior-SASRec`，若用户名或仓库名不同请先 `git remote set-url`）：
 
 ```bash
-cd path/to/SASRec
 git push -u origin main
 ```
 
@@ -27,7 +26,7 @@ cd UserBehavior-SASRec
 pip install -r requirements.txt
 ```
 
-训练数据 `data/*.parquet` 不在 Git 中，请从 [GitHub Releases](https://github.com/kamineayaka/UserBehavior-SASRec/releases) 下载，或运行 `python scripts/download_release_assets.py`（见 [数据与模型下载.md](数据与模型下载.md)）。
+训练数据 `data/*.parquet` 不在 Git 中，请从 [GitHub Releases](https://github.com/kamineayaka/UserBehavior-SASRec/releases) 下载，或运行 `python scripts/download_release_assets.py`（见 [docs/使用指南.md](docs/使用指南.md)）。
 
 ## 与 monorepo 的关系
 

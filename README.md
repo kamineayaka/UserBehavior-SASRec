@@ -1,56 +1,49 @@
-# SASRec 团队复现包
+# UserBehavior-SASRec
 
-本目录可**单独 clone / 提交**，用于团队复现 SASRec 训练与评估：数据在 `data/`，算法包在 [`sasrec_core/`](sasrec_core/)。
+SASRec 序列推荐算法的团队复现包：数据在 `data/`，算法在 [`sasrec_core/`](sasrec_core/)。可独立 clone，无需依赖上级 monorepo。
 
 ## 文档
 
 | 文档 | 内容 |
 |------|------|
-| [数据与模型下载.md](数据与模型下载.md) | 从 GitHub Release 下载 parquet / baseline 权重 |
-| [前置知识与SASRec.md](前置知识与SASRec.md) | 必备基础知识 + SASRec 原理简介 |
-| [使用指南.md](使用指南.md) | 环境、数据、训练、排障（按步骤操作） |
-| [resources/项目文档_UserBehavior-SASRec.docx](resources/项目文档_UserBehavior-SASRec.docx) | 详细项目文档（背景、前置知识、实现与流程） |
-| [团队网格搜索任务.md](团队网格搜索任务.md) | 团队 FAST 网格任务认领与 `grid_space` |
-| [成员提交与贡献者署名说明.md](成员提交与贡献者署名说明.md) | Fork/PR 提交步骤与 Contributors 署名 |
-| [results/grid_search/README.md](results/grid_search/README.md) | 网格结果文件命名规范 |
-| [data/README.md](data/README.md) | 数据文件清单与字段说明 |
+| [docs/使用指南.md](docs/使用指南.md) | 环境搭建、数据下载、训练流程、排障 |
+| [docs/背景知识.md](docs/背景知识.md) | 推荐系统基础 + SASRec 原理简介 |
+| [docs/团队协作.md](docs/团队协作.md) | 网格搜索任务、结果提交、维护者流程 |
+| [sasrec_core/README.md](sasrec_core/README.md) | 算法包 API 参考 |
+| [sasrec_core/SASREC_原理与实现.md](sasrec_core/SASREC_原理与实现.md) | 原理与代码对照（深入阅读） |
+| [data/README.md](data/README.md) | 数据文件字段说明 |
+| [resources/项目文档_UserBehavior-SASRec.docx](resources/项目文档_UserBehavior-SASRec.docx) | 补充：课程汇报用 Word 文档（可能滞后于 `docs/`） |
 
 ## 目录结构
 
 ```
-SASRec/
-├── sasrec_core/          # SASRec 算法包（随本目录提交）
-├── data/                 # 训练 parquet（本地复制，不入 Git）
+UserBehavior-SASRec/
+├── docs/                 # 项目文档（入口见上表）
+├── sasrec_core/          # SASRec 算法包
+├── data/                 # 训练 parquet（本地准备，不入 Git）
 ├── notebooks/
 │   ├── 01_full_train.ipynb
 │   ├── 02_grid_search.ipynb
 │   ├── 03_goal_check.ipynb
 │   └── 04_full_train_B7.ipynb
-├── results/              # 网格搜索输出
-├── scripts/
-│   ├── download_release_assets.py
-│   ├── merge_grid_results.py
-│   ├── sync_sasrec_core.py
-│   └── build_notebooks.py
-├── 前置知识与SASRec.md
-├── 使用指南.md
-└── requirements.txt
+├── results/grid_search/  # 网格搜索输出
+└── scripts/              # 下载、合并等辅助脚本
 ```
 
-## 克隆本仓库
+## 快速开始
 
 ```bash
 git clone https://github.com/kamineayaka/UserBehavior-SASRec.git
 cd UserBehavior-SASRec
-```
-
-## 5 分钟快速开始
-
-```bash
 pip install -r requirements.txt
-python scripts/download_release_assets.py   # 或见 数据与模型下载.md 手动下载
+python scripts/download_release_assets.py
 ```
 
 在 Jupyter 中打开 `notebooks/01_full_train.ipynb`，从上到下运行。
 
-参考指标（全量用户，HR@10 / NDCG@10）：见 `data/baseline/baseline_sasrec_20260425_130830.json`（约 **0.847 / 0.774**）。
+**参考指标**（全量约 98.6 万用户，HR@10 / NDCG@10）：见 `data/baseline/baseline_sasrec_20260425_130830.json`（约 **0.847 / 0.774**）。
+
+## 维护者
+
+- 首次发布到 GitHub：见 [GITHUB_SETUP.md](GITHUB_SETUP.md)
+- 从 monorepo 同步算法包：`python scripts/sync_sasrec_core.py --force`
